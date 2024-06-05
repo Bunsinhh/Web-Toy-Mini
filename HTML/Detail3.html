@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detail3</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <style>
+        @font-face {
+        font-family: 'Ninjago';
+        src: url('https://www.fontsaddict.com/fontface/ninjago.ttf');
+        }
+        #ninjago{
+          font-family: 'Ninjago', sans-serif;
+        }
+      </style>
+</head>
+<body>
+  <header class="flex gap-5 justify-between px-20 py-2.5 w-full text-black bg-white shadow-sm max-md:flex-wrap max-md:px-5 max-md:max-w-full">
+    <h1 class="justify-center text-4xl font-bold">
+      <span class="text-orange-500"><a href="./Home.html">K-T</span><span>on</span><span class="text-orange-500">H</a></span>
+    </h1>
+    <nav class="flex gap-5 items-start my-auto text-xl font-medium whitespace-nowrap max-md:flex-wrap">
+      <button onclick="window.location.href='./Home.html'" class="justify-center self-stretch px-8 py-2.5 text-center bg-white max-md:px-5 hover:text-orange-500">Home</button>
+      <button onclick="window.location.href='./Shop.html'" class="justify-center px-8 py-2.5 text-center bg-white max-md:px-5 font-bold text-orange-500">Shop</button>
+      <button onclick="window.location.href='./Help.html'" class="justify-center px-8 py-2.5 text-center bg-white max-md:px-5 hover:text-orange-500">Help</button>
+      <div onclick="window.location.href='./Cart.html'" class="justify-center self-stretch px-3 py-2 text-center bg-white max-md:px-5 hover:text-orange-500 border-2 border-black rounded-3xl hover:border-orange-500"><i class="fa-solid fa-cart-shopping"></i></div>
+      <button onclick="window.location.href='./login.html'" class="justify-center px-9 py-2.5 font-bold text-white bg-orange-500 rounded-[30px] max-md:px-5 hover:bg-orange-400 ">Login</button>
+    </nav>
+  </header>
+      <main class="flex flex-col px-20 mt-16 w-full max-md:px-5 max-md:mt-10 max-md:max-w-full">
+        <section class="flex gap-5 justify-between max-md:flex-wrap">
+          <aside class="flex flex-col items-center">
+            <img alt="Product image 1" loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/a7abc5e087f54d1f25721385f8a003bda5e18035c1bb4aef451d0bc3d7d83da6?apiKey=6470da43f31c46eeadb4764530d3789f&" class="aspect-square w-[150px]" />
+            <img alt="Product image 2" loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/4ea001b426d93ae7191097b83ab4ad5bb29b5de73f62f1ec4fdf6002a33098f0?apiKey=6470da43f31c46eeadb4764530d3789f&" class="mt-12 aspect-square w-[150px] max-md:mt-10" />
+            <img alt="Product image 3" loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/16bf0eb54a1146b3fd667d50779f76a9037365321ca0ab4727874e2bbdd10e4a?apiKey=6470da43f31c46eeadb4764530d3789f&" class="mt-12 aspect-square w-[150px] max-md:mt-10" />
+          </aside>
+          <section class="flex flex-col justify-center py-14 rounded-xl bg-zinc-100 max-md:max-w-full w-[530px]">
+            <img alt="Main product image" loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/4be43ee2799913393e4a1206ddbd319e09bdfd73d72a1d446e50a07d09893f7f?apiKey=6470da43f31c46eeadb4764530d3789f&" class="w-full aspect-[1.33]  max-md:max-w-full" />
+          </section>
+          <section class="flex flex-col self-end mt-9 text-4xl text-center text-black max-md:max-w-full">
+            <h2 class="self-start ml-4 font-bold max-md:max-w-full">Tournament Temple City</h2>
+            <hr class="shrink-0 mt-5 h-0.5 bg-black border border-black border-solid max-md:max-w-full">
+            <div class="flex gap-5 justify-between items-start mx-5 mt-6 text-base max-md:flex-wrap max-md:mr-2.5 max-md:max-w-full">
+              <div class="flex flex-col justify-center whitespace-nowrap">
+                <span class="font-medium">Ages</span>
+                <span class="mt-3">6+</span>
+              </div>
+              <div class="flex flex-col justify-center whitespace-nowrap">
+                <span class="font-medium">Pieces</span>
+                <span class="mt-3.5">3489</span>
+              </div>
+              <div class="flex flex-col justify-center">
+                <span class="font-medium">LEGO® Insiders Points</span>
+                <span class="self-center mt-3.5">1625</span>
+              </div>
+              <div class="flex flex-col justify-center whitespace-nowrap">
+                <span class="font-medium">Item</span>
+                <span class="mt-3.5">71814</span>
+              </div>
+            </div>
+            <hr class="shrink-0 mt-7 h-0.5 bg-black border border-black border-solid max-md:max-w-full">
+            <span class="mt-12 font-bold max-md:mt-10 max-md:max-w-full">$249.99</span>
+            <div class="flex gap-0 self-start mt-6 whitespace-nowrap">
+              <button class="justify-center px-2 border border-black border-solid">-</button>
+              <input type="text" class="px-12 py-px text-3xl text-center border border-black max-md:px-5" value="1" aria-label="Quantity" readonly />
+              <button class="justify-center px-2 border border-black border-solid">+</button>
+            </div>
+            <button class="justify-center items-center px-16 py-3.5 mt-8 text-3xl border border-black border-solid max-md:px-5 max-md:max-w-full">Add To Cart</button>
+            <button class="justify-center items-center px-16 pt-3.5 pb-2 mt-5 text-3xl text-white bg-orange-500 border border-black border-solid max-md:px-5 max-md:max-w-full">Buy It Now</button>
+          </section>
+        </section>
+        <section>
+          <h3 class="mt-16 text-2xl font-bold text-black max-md:mt-10 max-md:max-w-full">NINJAGO® Toys</h3>
+          <p class="mt-2 text-base font-light text-black max-md:max-w-full">Ever wondered what would happen if you could control the world of your wildest dreams?</p>
+          <p class="mt-1 text-base font-light tracking-normal text-black max-md:max-w-full">It's time to defend the dream world with LEGO® DREAMZzz™ playsets and encourage kids to unleash their imaginations and harness the power of dreams as never before.</p>
+        </section>
+      </main>
+      <div id="ninjago" class="flex gap-5 justify-between px-20 py-10 mt-5 w-full text-3xl bg-zinc-500 max-md:flex-wrap max-md:px-5 max-md:max-w-full">
+        <div class=" text-white">NINJAGO</div>
+        <div class=" text-white max-md:max-w-full">
+          My Lord! Please COST all Your MONEY here.
+        </div>
+      </div>
+      <section class="flex flex-col flex-wrap gap-y-2.5 justify-between content-center px-20 py-20 mt-5 w-full bg-orange-500 max-md:px-5 max-md:max-w-full">
+        <div class="flex gap-5 justify-between mt-2.5 text-6xl font-bold text-white whitespace-nowrap max-md:flex-wrap max-md:max-w-full max-md:text-4xl">
+          <span class="max-md:text-4xl">K-TonH</span>
+          <div class="text-2xl  my-auto flex justify-between gap-5">
+            <i class="fa-brands fa-square-facebook"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-linkedin-in"></i>
+            <i class="fa-brands fa-youtube"></i>
+            <i class="fa-brands fa-instagram"></i>
+          </div>
+        </div>
+        <hr class="shrink-0 mt-2.5 h-px bg-white border border-white border-solid max-md:max-w-full">
+        <nav class="flex gap-5 justify-between mt-2.5 mb-2 w-full text-sm text-white max-md:flex-wrap max-md:max-w-full">
+          <a href="#" class="flex gap-5 justify-between uppercase max-md:flex-wrap">
+            <span>About us</span>
+            <span>Privacy Policy</span>
+            <span>Disclaimer</span>
+            <span>Contact us</span>
+            <span>Help</span>
+          </a>
+          <span>Copyright © 2018 • Lift Media Inc.</span>
+        </nav>
+      </section>
+</body>
+</html>

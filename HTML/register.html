@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+</head>
+<body>
+    <section class="flex justify-center items-center px-16 py-20 bg-orange-500 max-md:px-5">
+        <div class="flex flex-col mt-14 max-w-full w-[551px] max-md:mt-10">
+          <header class="mr-0 text-6xl text-center text-zinc-950 max-md:max-w-full max-md:text-4xl">
+            <h1>
+              <span class="font-medium">Welcome!</span>
+              <span class="font-bold  text-white"><a href="./Home.html">K-TonH</a></span>
+            </h1>
+          </header>
+          <main class="flex flex-col self-center px-10 py-10 mt-20 max-w-full bg-white rounded-xl shadow-md w-[505px] max-md:px-5 max-md:mt-10">
+            <h2 class="text-3xl font-medium text-black max-md:max-w-full">Register to <span class="text-orange-500">K-TonH</span></h2>
+            <form class="flex flex-col justify-center mt-1 max-md:mt-1 max-md:max-w-full">
+                <div class="flex flex-col justify-center mt-11 max-md:mt-10 max-md:max-w-full">
+                    <label for="email" class="text-base text-black max-md:max-w-full">Email</label>
+                    <div class="flex flex-col justify-center mt-4 text-sm font-light text-neutral-400 max-md:max-w-full">
+                      <input id="email" class="justify-center items-start px-7 py-5 bg-white rounded-md border border-solid border-zinc-800 max-md:px-5 max-md:max-w-full" placeholder="Enter your email">
+                    </div>
+                  </div>
+              <div class="flex flex-col justify-center mt-5 max-md:mt-5 max-md:max-w-full">
+                <label for="username" class="text-base text-black max-md:max-w-full">User name</label>
+                <div class="flex flex-col justify-center mt-4 text-sm font-light text-neutral-400 max-md:max-w-full">
+                  <input id="username" class="justify-center items-start px-7 py-5 bg-white rounded-md border border-solid border-zinc-800 max-md:px-5 max-md:max-w-full" placeholder="Enter your user name">
+                </div>
+              </div>
+              <label for="passwordInput" class="text-base text-black max-md:max-w-full mt-4">Password</label>
+              <div class="flex gap-5 px-7 py-5 mt-4 bg-white rounded-md border border-solid border-zinc-800 max-md:flex-wrap max-md:px-5 max-md:max-w-full">
+                <input id="passwordInput" type="password" placeholder="Enter your Password" aria-label="Enter your Password" class="flex-auto" />
+                <p class="shrink-0  w-[21px]"><i class="fa-solid fa-eye-slash" ></i></p>
+              </div>
+              <label for="confirmPasswordInput" class="text-base text-black max-md:max-w-full mt-4">Confirm Password</label>
+              <div class="flex gap-5 px-7 py-5 mt-4 bg-white rounded-md border border-solid border-zinc-800 max-md:flex-wrap max-md:px-5 max-md:max-w-full">
+                <input id="confirmPasswordInput" type="password" placeholder="Confirm your Password" aria-label="Confirm your Password" class="flex-auto my-auto" />
+                <p class="shrink-0  w-[21px]"><i class="fa-solid fa-eye-slash" ></i></p>
+              </div>
+              <button type="submit" class="justify-center items-center px-16 py-5 mt-9 text-base font-medium text-white whitespace-nowrap bg-orange-500 rounded-md max-md:px-5 max-md:max-w-full">Register</button>
+            </form>
+            <nav class="flex gap-5 self-center mt-5 text-base font-light">
+              <p class="grow text-zinc-500">
+                <span class="text-zinc-500">Already have an Account ?</span>
+              </p>
+              <a href="./login.html" class="text-orange-500 font-semibold">Login</a>
+            </nav>
+          </main>
+        </div>
+      </section>
+</body>
+</html>

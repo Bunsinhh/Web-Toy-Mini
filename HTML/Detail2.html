@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <style>
+        @font-face {
+        font-family: 'Ninjago';
+        src: url('https://www.fontsaddict.com/fontface/ninjago.ttf');
+        }
+        #ninjago{
+          font-family: 'Ninjago', sans-serif;
+        }
+      </style>
+</head>
+<body>
+    <section class="flex flex-col bg-white">
+      <header class="flex gap-5 justify-between px-20 py-2.5 w-full text-black bg-white shadow-sm max-md:flex-wrap max-md:px-5 max-md:max-w-full">
+        <h1 class="justify-center text-4xl font-bold">
+          <span class="text-orange-500"><a href="./Home.html">K-T</span><span>on</span><span class="text-orange-500">H</a></span>
+        </h1>
+        <nav class="flex gap-5 items-start my-auto text-xl font-medium whitespace-nowrap max-md:flex-wrap">
+          <button onclick="window.location.href='./Home.html'" class="justify-center self-stretch px-8 py-2.5 text-center bg-white max-md:px-5 hover:text-orange-500">Home</button>
+          <button onclick="window.location.href='./Shop.html'" class="justify-center px-8 py-2.5 text-center bg-white max-md:px-5 font-bold text-orange-500">Shop</button>
+          <button onclick="window.location.href='./Help.html'" class="justify-center px-8 py-2.5 text-center bg-white max-md:px-5 hover:text-orange-500">Help</button>
+          <div onclick="window.location.href='./Cart.html'" class="justify-center self-stretch px-3 py-2 text-center bg-white max-md:px-5 hover:text-orange-500 border-2 border-black rounded-3xl hover:border-orange-500"><i class="fa-solid fa-cart-shopping"></i></div>
+          <button onclick="window.location.href='./login.html'" class="justify-center px-9 py-2.5 font-bold text-white bg-orange-500 rounded-[30px] max-md:px-5 hover:bg-orange-400 ">Login</button>
+        </nav>
+      </header>
+        <main class="flex flex-col px-20 mt-16 w-full max-md:px-5 max-md:mt-10 max-md:max-w-full">
+          <section class="flex gap-5 justify-between max-md:flex-wrap">
+            <div class="flex flex-col items-center">
+              <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/826831e36c9b7010c14e2585d7a43d5612c594456f4ad07a983714d99cd98187?apiKey=6470da43f31c46eeadb4764530d3789f&" alt="Product Image 1" class="aspect-square w-[150px]" />
+              <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/49f8ab9e967211ddca452368e3000f3236d46cc45dc7b0c9bd14fba12a51a646?apiKey=6470da43f31c46eeadb4764530d3789f&" alt="Product Image 2" class="mt-12 aspect-square w-[150px] max-md:mt-10" />
+              <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/25a9b272f2f39edef853097e52ce3f15dc54b026c4dcb5ff3fc76f52261747ea?apiKey=6470da43f31c46eeadb4764530d3789f&" alt="Product Image 3" class="mt-12 aspect-square w-[150px] max-md:mt-10" />
+            </div>
+            <div class="flex flex-col justify-center py-14 rounded-xl bg-zinc-100 max-md:max-w-full w-[530px]">
+              <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/ab9309fdbbde484d664dc561bb1dab4ce204f77b48f72bb82bb000b1f53f8700?apiKey=6470da43f31c46eeadb4764530d3789f&" alt="Main Product Image" class="w-full aspect-[1.33] max-md:max-w-full" />
+            </div>
+            <div class="flex flex-col self-end mt-9 text-4xl text-center text-black max-md:max-w-full">
+              <h1 class="font-bold max-md:max-w-full">Cole's Titan Dragon Mech</h1>
+              <hr class="shrink-0 mt-5 h-0.5 bg-black border border-black border-solid max-md:max-w-full" />
+              <div class="flex gap-5 justify-between items-start mx-6 mt-6 text-base max-md:flex-wrap max-md:mr-2.5 max-md:max-w-full">
+                <div class="flex flex-col justify-center whitespace-nowrap">
+                  <strong class="font-medium">Ages</strong>
+                  <p class="mt-3">6+</p>
+                </div>
+                <div class="flex flex-col justify-center whitespace-nowrap">
+                  <strong class="font-medium">Pieces</strong>
+                  <p class="mt-3.5">1055</p>
+                </div>
+                <div class="flex flex-col justify-center">
+                  <strong class="font-medium">LEGO® Insiders Points</strong>
+                  <p class="self-center mt-3.5">650</p>
+                </div>
+                <div class="flex flex-col justify-center whitespace-nowrap">
+                  <strong class="font-medium">Item</strong>
+                  <p class="mt-3.5">71821</p>
+                </div>
+              </div>
+              <hr class="shrink-0 mt-7 h-0.5 bg-black border border-black border-solid max-md:max-w-full" />
+              <div class="mt-12 font-bold max-md:mt-10 max-md:max-w-full">$199.99</div>
+              <div class="flex gap-0 self-start mt-6 whitespace-nowrap">
+                <button class="justify-center px-2 border border-black border-solid">-</button>
+                <input type="number" value="1" class="px-12 py-px text-3xl text-center border border-black max-md:px-5" />
+                <button class="justify-center px-2 border border-black border-solid">+</button>
+              </div>
+              <button class="justify-center items-center px-16 py-3.5 mt-8 text-3xl border border-black border-solid max-md:px-5 max-md:max-w-full">Add To Cart</button>
+              <button class="justify-center items-center px-16 pt-3.5 pb-2 mt-5 text-3xl text-white bg-orange-500 border border-black border-solid max-md:px-5 max-md:max-w-full">Buy It Now</button>
+            </div>
+          </section>
+          <section>
+            <h2 class="mt-16 text-2xl font-bold text-black max-md:mt-10 max-md:max-w-full">NINJAGO® Toys</h2>
+            <p class="mt-2 text-base font-light text-black max-md:max-w-full">Ever wondered what would happen if you could control the world of your wildest dreams?</p>
+            <p class="mt-1 text-base font-light tracking-normal text-black max-md:max-w-full">It's time to defend the dream world with LEGO® DREAMZzz™ playsets and encourage kids to unleash their imaginations and harness the power of dreams as never before.</p>
+          </section>
+        </main>
+        <footer>
+          <div id="ninjago" class="flex gap-5 justify-between px-20 py-10 mt-5 w-full text-3xl bg-zinc-500 max-md:flex-wrap max-md:px-5 max-md:max-w-full">
+            <div class=" text-white">NINJAGO</div>
+            <div class=" text-white max-md:max-w-full">
+              My Lord! Please COST all Your MONEY here.
+            </div>
+          </div>
+          <section class="flex flex-col flex-wrap gap-y-2.5 justify-between content-center px-20 py-20 mt-5 w-full bg-orange-500 max-md:px-5 max-md:max-w-full">
+            <div class="flex gap-5 justify-between mt-2.5 text-6xl font-bold text-white whitespace-nowrap max-md:flex-wrap max-md:max-w-full max-md:text-4xl">
+              <div class="max-md:text-4xl">K-TonH</div>
+              <div class="text-2xl  my-auto flex justify-between gap-5">
+                <i class="fa-brands fa-square-facebook"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-linkedin-in"></i>
+                <i class="fa-brands fa-youtube"></i>
+                <i class="fa-brands fa-instagram"></i>
+              </div>
+            </div>
+            <hr class="shrink-0 mt-2.5 h-px bg-white border border-white border-solid max-md:max-w-full" />
+            <nav class="flex gap-5 justify-between mt-2.5 mb-2.5 w-full text-sm text-white max-md:flex-wrap max-md:max-w-full">
+              <a href="#">About us</a>
+              <a href="#">Privacy Policy</a>
+              <a href="#">Disclaimer</a>
+              <a href="#">Contact us</a>
+              <a href="#">Help</a>
+            </nav>
+            <div>Copyright © 2018 • Lift Media Inc.</div>
+          </section>
+        </footer>
+      </section>
+</body>
+</html>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+</head>
+<body>
+    <header class="flex flex-col bg-white">
+        <nav class="flex gap-5 justify-between px-20 py-2.5 w-full text-black bg-white shadow-sm max-md:flex-wrap max-md:px-5 max-md:max-w-full">
+            <h1 class="justify-center text-4xl font-bold">
+                <span class="text-orange-500"><a href="./Home.html">K-T</span><span>on</span><span class="text-orange-500">H</a></span>
+              </h1>
+            <div class="flex gap-5 items-start my-auto text-xl font-medium whitespace-nowrap max-md:flex-wrap">
+                <button onclick="window.location.href='./Home.html'" class="justify-center self-stretch px-8 py-2.5 text-center bg-white max-md:px-5 hover:text-orange-500">Home</button>
+                <button onclick="window.location.href='./Shop.html'" class="justify-center px-8 py-2.5 text-center bg-white max-md:px-5 hover:text-orange-500">Shop</button>
+                <button onclick="window.location.href='./Help.html'" class="justify-center px-8 py-2.5 text-center bg-white max-md:px-5 hover:text-orange-500">Help</button>
+                <div onclick="window.location.href='./Cart.html'" class="justify-center self-stretch px-3 py-2 text-center bg-white max-md:px-5 text-orange-500 border-2 rounded-3xl border-orange-500"><i class="fa-solid fa-cart-shopping"></i></div>
+                <button onclick="window.location.href='./login.html'" class="justify-center px-9 py-2.5 font-bold text-white bg-orange-500 rounded-[30px] max-md:px-5 hover:bg-orange-400 ">Login</button>
+            </div> 
+        </nav>
+    </header>
+    <main class="flex flex-col px-20 mt-24 w-full text-base font-bold max-md:px-5 max-md:mt-10 max-md:max-w-full">
+        <section>
+            <h1 class="text-2xl font-medium text-black max-md:max-w-full">My Cart</h1>
+            <div class="flex flex-col py-5 pr-9 mt-5 text-black bg-zinc-100 max-md:pr-5 max-md:max-w-full">
+                <div class="self-start ml-5 font-medium text-orange-500 max-md:ml-2.5">Pre-Order</div>
+
+                <div class="flex gap-5 justify-between px-0.5 pb-4 mt-5 w-full text-center max-md:flex-wrap max-md:max-w-full">
+                    <div class="flex gap-0">
+                        <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/de63243efc2eb979583e4f1f8f55114b26b9a5449cb575e0991cf90055fd569d?apiKey=6470da43f31c46eeadb4764530d3789f&" alt="Cole's Titan Dragon Mech" class="shrink-0 max-w-full aspect-[1.33] w-[155px]" />
+                        <div class="flex flex-col self-start">
+                            <h2>Cole's Titan Dragon Mech</h2>
+                            <div class="flex gap-0 mt-6 whitespace-nowrap max-md:pr-5">
+                                <button class="justify-center px-2 py-px border border-black border-solid">-</button>
+                                <input type="text" value="2" class="justify-center px-9 py-px border border-black border-solid max-md:px-5 text-center" aria-label="quantity" />
+                                <button class="justify-center px-2 py-px border border-black border-solid">+</button>
+                            </div>
+                            <div class="mt-6">$99.99</div>
+                        </div>
+                    </div>
+                    <button class="shrink-0 my-auto w-5 aspect-square"><img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/ed4f37cdf6335f4e86430726b1097dbccb0474372e5fb7fe2a97ae7cc3396e5b?apiKey=6470da43f31c46eeadb4764530d3789f&" alt="Remove item" /></button> 
+                </div>
+                <!--  -->
+                <div class="flex gap-5 justify-between px-0.5 pb-4 mt-5 w-full text-center max-md:flex-wrap max-md:max-w-full">
+                    <div class="flex gap-0">
+                        <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/b1419caee9da4fc796424b6e27a6ab5880a87ed4b06f6853ed0bb00cb143697e?apiKey=6470da43f31c46eeadb4764530d3789f&" alt="Cole's Titan Dragon Mech" class="shrink-0 max-w-full aspect-[1.33] w-[155px]" />
+                        <div class="flex flex-col self-start">
+                            <h2>Cole's Titan Dragon Mech</h2>
+                            <div class="flex gap-0 mt-6 whitespace-nowrap max-md:pr-5">
+                                <button class="justify-center px-2 py-px border border-black border-solid">-</button>
+                                <input type="text" value="1" class="justify-center px-9 py-px border border-black border-solid max-md:px-5 text-center" aria-label="quantity" />
+                                <button class="justify-center px-2 py-px border border-black border-solid">+</button>
+                            </div>
+                            <div class="mt-6">$199.99</div>
+                        </div>
+                    </div>
+                    <button class="shrink-0 my-auto w-5 aspect-square"><img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/ed4f37cdf6335f4e86430726b1097dbccb0474372e5fb7fe2a97ae7cc3396e5b?apiKey=6470da43f31c46eeadb4764530d3789f&" alt="Remove item" /></button> 
+                </div>
+                <!--  -->
+                <div class="flex gap-5 justify-between px-px pb-4 mt-5 w-full text-center max-md:flex-wrap max-md:max-w-full">
+                    <div class="flex gap-0">
+                        <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/892edde6e0365bd7e9f64c6364672f11610aa817259825e5e86ee5d370296552?apiKey=6470da43f31c46eeadb4764530d3789f&" alt="Cole's Titan Dragon Mech" class="shrink-0 max-w-full aspect-[1.33] w-[156px]" />
+                        <div class="flex flex-col self-start">
+                            <h2>Cole's Titan Dragon Mech</h2>
+                            <div class="flex gap-0 mt-6 whitespace-nowrap max-md:pr-5">
+                                <button class="justify-center px-2 py-px border border-black border-solid">-</button>
+                                <input type="text" value="1" class="justify-center px-9 py-px border border-black border-solid max-md:px-5 text-center" aria-label="quantity" />
+                                <button class="justify-center px-2 py-px border border-black border-solid">+</button> 
+                            </div>
+                            <div class="mt-6">$249.99</div>
+                        </div>
+                    </div>
+                    <button class="shrink-0 my-auto w-5 aspect-square"><img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/ed4f37cdf6335f4e86430726b1097dbccb0474372e5fb7fe2a97ae7cc3396e5b?apiKey=6470da43f31c46eeadb4764530d3789f&" alt="Remove item" /></button>
+                </div>
+            </div>
+            <aside class="flex flex-col items-start py-5 pr-5 pl-2.5 mt-16 bg-zinc-100 max-md:mt-10 max-md:max-w-full">
+                <div class="ml-3.5 font-medium text-orange-500 max-md:ml-2.5">Order Summary</div>
+                <div class="mt-7 ml-3.5 text-center text-black max-md:ml-2.5">Order value (3) items</div>
+                <div class="flex gap-5 justify-between mt-6 ml-3.5 text-center max-md:ml-2.5">
+                    <div class="text-black">Order Total</div>
+                    <div class="text-orange-500">$849.96</div>
+                </div>
+                <button class="justify-center items-center self-stretch px-16 py-5 mt-10 text-center text-white whitespace-nowrap bg-orange-500 max-md:px-5 max-md:max-w-full hover:bg-orange-400">Buy</button>
+            </aside>
+        </section>
+    </main>
+    <footer class="flex flex-col flex-wrap gap-y-2.5 justify-between content-center px-20 py-20 mt-16 w-full bg-orange-500 max-md:px-5 max-md:mt-10 max-md:max-w-full">
+        <div class="flex gap-5 justify-between mt-2.5 text-6xl font-bold text-white whitespace-nowrap max-md:flex-wrap max-md:max-w-full max-md:text-4xl">
+            <div class="max-md:text-4xl">K-TonH</div>
+            <div class="text-2xl  my-auto flex justify-between gap-5">
+                <i class="fa-brands fa-square-facebook"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-linkedin-in"></i>
+                <i class="fa-brands fa-youtube"></i>
+                <i class="fa-brands fa-instagram"></i>
+              </div>
+        </div>
+        <div class="shrink-0 mt-2.5 h-px bg-white border border-white border-solid max-md:max-w-full"></div>
+        <nav class="flex gap-5 justify-between mt-2.5 mb-2.5 w-full text-sm text-white max-md:flex-wrap max-md:max-w-full">
+            <div class="flex gap-5 justify-between uppercase max-md:flex-wrap">
+                <a href="#">About us</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Disclaimer</a>
+                <a href="#">Contact us</a>
+                <a href="#">Help</a>
+            </div>
+            <div>Copyright © 2018 • Lift Media Inc.</div>
+        </nav>
+    </footer>
+</body>
+</html>
