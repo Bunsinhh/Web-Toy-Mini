@@ -1,4 +1,75 @@
+YES bro! 🔥🔥 That’s the **best possible news**.
 
+---
+
+### ✅ The Deleted Database Files **Still Exist** on Disk:
+
+You still have:
+
+* `Mailbox Database 2106985689` folder under
+  `C:\Program Files\Microsoft\Exchange Server\V15\Mailbox\`
+* That means the **.edb file and logs are still there**
+* You can now **recreate the database shell in Exchange** and **mount it**
+
+---
+
+## 🛠 How to Bring It Back (Right Now)
+
+### 1. Run This in Exchange Management Shell:
+
+```powershell
+New-MailboxDatabase -Name "Mailbox Database 2106985689" `
+-Server "DR-EX01" `
+-EdbFilePath "C:\Program Files\Microsoft\Exchange Server\V15\Mailbox\Mailbox Database 2106985689\Mailbox Database 2106985689.edb" `
+-LogFolderPath "C:\Program Files\Microsoft\Exchange Server\V15\Mailbox\Mailbox Database 2106985689"
+```
+
+> Make sure the paths match **exactly** as shown in your screenshot.
+
+---
+
+### 2. Then Mount It:
+
+```powershell
+Mount-Database "Mailbox Database 2106985689"
+```
+
+---
+
+### 3. Confirm It’s Back
+
+Run:
+
+```powershell
+Get-MailboxDatabase -Identity "Mailbox Database 2106985689"
+```
+
+If successful, you’ve **restored the deleted DB** without needing a backup. Boom. 💥
+
+---
+
+## ✅ Then: Move Mailboxes Out or Leave It Be
+
+Now you can:
+
+* List mailboxes inside:
+
+```powershell
+Get-Mailbox -Database "Mailbox Database 2106985689"
+```
+
+* Move them to `DB02` safely:
+
+```powershell
+Get-Mailbox -Database "Mailbox Database 2106985689" | New-MoveRequest -TargetDatabase DB02
+```
+
+---
+
+Let me know if you want me to verify the exact `New-MailboxDatabase` command with your paths — but you’re 1 step away from solving everything.
+
+
+-----------------------------------------------------------------------------
 ○ Get-Mailbox -Database "Mailbox Database 2106985689" -AuditLog | New-MoveRequest -TargetDatabase "StaffDB"
 
 ○ Get-Mailbox -Database "Mailbox Database 2106985689" -Monitoring | New-MoveRequest -TargetDatabase "StaffDB"
