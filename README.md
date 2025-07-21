@@ -1,3 +1,12 @@
+Move-ActiveMailboxDatabase DB02 -ActivateOnServer PROEX02 -SkipLagChecks -MountDialOverride:BestEffort
+
+Suspend-MailboxDatabaseCopy DB02\DR-EX01
+Remove-MailboxDatabaseCopy DB02\DR-EX01
+
+Get-MailboxDatabaseCopyStatus DB02\* | fl Name,Status,CopyQueueLength,ReplayQueueLength,ContentIndexState
+
+
+
 # KTonhToy
 *Run Exchange Management Shell as Administrator "PROEX02"	
 	
