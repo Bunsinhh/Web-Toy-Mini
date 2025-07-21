@@ -1,3 +1,11 @@
+
+Get-Mailbox -ResultSize Unlimited | Where-Object {$_.Database -like "*2106985689*"} | Select Name,Alias,Database
+
+
+
+
+
+
 Move-ActiveMailboxDatabase DB02 -ActivateOnServer PROEX02 -SkipLagChecks -MountDialOverride:BestEffort
 
 Suspend-MailboxDatabaseCopy DB02\DR-EX01
