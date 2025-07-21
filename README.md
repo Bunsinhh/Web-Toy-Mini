@@ -68,11 +68,9 @@ HealthMailbox-DR-EX01-Mailbox...     9a3b7c8d-eed3-4fdd-8e92-xxxxxx
 
 If you want to restore **that HealthMailbox** into a mailbox called `Admin`:
 
-```powershell
-New-MailboxRestoreRequest `
--SourceDatabase "Mailbox Database 2106985689" `
--SourceStoreMailbox 9a3b7c8d-eed3-4fdd-8e92-xxxxxx `
--TargetMailbox Admin
+```
+New-MailboxRestoreRequest -SourceDatabase "Mailbox Database 2106985689" -SourceStoreMailbox 5cbf202e-5f81-4fb5-8aff-219d7c67d171 -TargetMailbox TargetMailboxAlias
+
 ```
 
 ---
