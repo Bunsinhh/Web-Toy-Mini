@@ -1,9 +1,13 @@
 
 ○ Get-Mailbox -Database "Mailbox Database 2106985689" -AuditLog | New-MoveRequest -TargetDatabase "StaffDB"
-    ○ Get-Mailbox -Database "Mailbox Database 2106985689" -Monitoring | New-MoveRequest -TargetDatabase "StaffDB"
-    ○ Get-Mailbox -Database "Mailbox Database 2106985689" -Archive | New-MoveRequest -TargetDatabase "StaffDB"
-    ○ Get-Mailbox -Database "Mailbox Database 2106985689" -Arbitration | New-MoveRequest -TargetDatabase "StaffDB"
-    ○ Get-Mailbox -Database "Mailbox Database 2106985689" -ReadFromDomainController | New-MoveRequest -TargetDatabase "StaffDB"
+
+○ Get-Mailbox -Database "Mailbox Database 2106985689" -Monitoring | New-MoveRequest -TargetDatabase "StaffDB"
+
+○ Get-Mailbox -Database "Mailbox Database 2106985689" -Archive | New-MoveRequest -TargetDatabase "StaffDB"
+
+○ Get-Mailbox -Database "Mailbox Database 2106985689" -Arbitration | New-MoveRequest -TargetDatabase "StaffDB"
+
+○ Get-Mailbox -Database "Mailbox Database 2106985689" -ReadFromDomainController | New-MoveRequest -TargetDatabase "StaffDB"
 
 Get-Mailbox -ResultSize Unlimited | Where-Object {$_.Database -like "*2106985689*"} | Select Name,Alias,Database
 
